@@ -1,12 +1,10 @@
 const { decodeToken } = require('../helpers/jwt')
-const Todo = require('../models/todo')
 const User = require('../models/user')
-const Project = require('../models/project')
 
 const authentication = (req, res, next) => {
     try {
         req.loggedUser = decodeToken(req.headers.token)
-        // console.log(req.loggedUser);
+        console.log(req.loggedUser);
         User.findOne({
             email: req.loggedUser.email
         })
@@ -24,6 +22,4 @@ const authentication = (req, res, next) => {
 
 
 
-module.exports = {
-    authentication
-}
+module.exports = authentication
