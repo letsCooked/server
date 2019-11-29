@@ -66,7 +66,7 @@ class UserController {
                     return User.create({
                         name: googlePayload.name,
                         email: googlePayload.email,
-                        password: process.env.PASSWORD_USER,
+                        password: process.env.PASSWORD_USER || "google",
                         isGoogle: true
                     })
                 }
