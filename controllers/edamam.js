@@ -1,11 +1,10 @@
-const axios = require('axios')
 const Edamam = require('../api/edamam')
 
 class EdamamController {
     static getRecipes(req, res, next) {
         let recipe = req.params.recipe
         if (recipe) {
-            Bored({
+            Edamam({
                 url: `search?q=${req.params.recipe}&app_id=3f836cdc&app_key=b71525fc53bf070d830fd1fae60e5362`
             })
                 .then(recipe => {

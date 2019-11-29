@@ -5,7 +5,6 @@ const bored = require('./boredRoute')
 const edamam = require('./edamamRoute')
 
 
-
 router.use('/user', user)
 router.use('/weather', weather)
 router.use('/cook', bored)

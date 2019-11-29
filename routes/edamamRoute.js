@@ -1,6 +1,8 @@
 const router = require('express').Router()
-const edamamController = require('../controllers/edamam')
+const EdamamController = require('../controllers/edamam')
+const authentication = require('../middlewares/auth')
 
-router.get('/:recipe',edamamController.getRecipes)
+
+router.get('/:recipe', authentication, EdamamController.getRecipes)
 
 module.exports = router
