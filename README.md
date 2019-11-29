@@ -65,7 +65,6 @@
     })
   ```
 
-<br>
 **Login User**
 ----
   Returns json data about a single user.
@@ -118,7 +117,7 @@
     })
   ```
 
-<br>
+
 **Sign In Google User**
 ----
   Returns json data about a single user.
@@ -151,7 +150,7 @@
         console.log(token, name)
     })
   ```
-<br>
+
 **Display Weather**
 ----
   Returns json data about current weather.
@@ -174,52 +173,13 @@
     **Content:** 
     ```javascript
         {
-            "data": [
-                {
-                    "rh": 62,
-                    "pod": "d",
-                    "lon": 106.84513,
-                    "pres": 1007.1,
-                    "timezone": "Asia/Jakarta",
-                    "ob_time": "2019-11-29 06:00",
-                    "country_code": "ID",
-                    "clouds": 98,
-                    "ts": 1575007200,
-                    "solar_rad": 253.3,
-                    "state_code": "04",
-                    "city_name": "Jakarta",
-                    "wind_spd": 5.7,
-                    "last_ob_time": "2019-11-29T06:00:00",
-                    "wind_cdir_full": "north-northeast",
-                    "wind_cdir": "NNE",
-                    "slp": 1008,
-                    "vis": 5,
-                    "h_angle": 30,
-                    "sunset": "10:55",
-                    "dni": 968.28,
-                    "dewpt": 24.8,
-                    "snow": 0,
-                    "uv": 7.11128,
-                    "precip": 0,
-                    "wind_dir": 20,
-                    "sunrise": "22:28",
-                    "ghi": 1000.7,
-                    "dhi": 128.43,
-                    "aqi": 156,
-                    "lat": -6.21462,
-                    "weather": {
-                        "icon": "c04d",
-                        "code": "804",
-                        "description": "Overcast clouds"
-                    },
-                    "datetime": "2019-11-29:06",
-                    "temp": 33,
-                    "station": "WIII",
-                    "elev_angle": 65.49,
-                    "app_temp": 40.3
-                }
-            ],
-            "count": 1
+            "description": "Overcast clouds",
+            "icon": "c04d",
+            "city_name": "Bandung",
+            "country_code": "ID",
+            "timezone": "Asia/Jakarta",
+            "temperature": 29.2,
+            "datetime": "2019-11-29:07"
         }
     ```
  
