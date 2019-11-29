@@ -1,16 +1,16 @@
 const router = require('express').Router()
 const user = require('./userRoute')
-const edamam = require('./edamam')
-
-router.use('/edamam',edamam)
-
-const bored = require('./boredRoute')
 const weather = require('./weatherRoute')
+const bored = require('./boredRoute')
+const edamam = require('./edamamRoute')
 
-router.use('/bored', bored)
 
 
 router.use('/user', user)
 router.use('/weather', weather)
+router.use('/cook', bored)
+router.use('/recipe', edamam)
+
+
 
 module.exports = router

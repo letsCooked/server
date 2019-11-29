@@ -1,13 +1,15 @@
-const axios = require('axios')
+const Bored = require('../api/bored')
 
 class BoredController {
     static random(req, res, next) {
-        axios.get('https://www.boredapi.com/api/activity?type=cooking')
-        .then(({data}) => {
-            res.status(200).json(data)
+        Bored({
+            url: `/activity?type=cooking`
         })
-        .catch(next)
-    } 
+            .then(({ data }) => {
+                res.status(200).json(data)
+            })
+            .catch(next)
+    }
 }
 
 module.exports = BoredController
