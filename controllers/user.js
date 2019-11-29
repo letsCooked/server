@@ -6,9 +6,6 @@ const User = require('../models/user'),
 class UserController {
 
     static register(req, res, next) {
-        // if (!req.body.email) {
-        //     next({ status: 400, message: 'Please enter your email address.' })
-        // } else {
         let { name, email, password } = req.body
         User.create({ name, email, password })
             .then(newUser => {
@@ -19,9 +16,6 @@ class UserController {
     }
 
     static login(req, res, next) {
-        // if (!req.body.email) {
-        //     next({ status: 400, message: 'Invalid email or password.' })
-        // } else {
         let { email, password } = req.body
         User.findOne({
             email: email
@@ -49,7 +43,6 @@ class UserController {
                 }
             })
             .catch(next)
-        // }
     }
 
     static googleLogin(req, res, next) {
