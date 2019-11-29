@@ -64,8 +64,8 @@
         console.log(err)
     })
   ```
-
-<br>
+  
+  
 **Login User**
 ----
   Returns json data about a single user.
@@ -118,7 +118,6 @@
     })
   ```
 
-<br>
 **Sign In Google User**
 ----
   Returns json data about a single user.
@@ -151,8 +150,8 @@
         console.log(token, name)
     })
   ```
-<br>
-* **Display Weather**
+
+**Display Weather**
 ----
   Returns json data about current weather.
 
