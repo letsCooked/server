@@ -64,8 +64,7 @@
         console.log(err)
     })
   ```
-  
-  
+
 **Login User**
 ----
   Returns json data about a single user.
@@ -117,6 +116,7 @@
         }
     })
   ```
+
 
 **Sign In Google User**
 ----
